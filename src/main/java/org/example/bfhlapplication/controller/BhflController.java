@@ -9,19 +9,18 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/bfhl")
 public class BhflController {
     @Autowired
     BfhlService bfhlService;
 
-    @PostMapping
+    @PostMapping("/bfhl")
     public ResponseEntity<Response> handlePost(@RequestBody BfhlRequest request) {
         System.out.println("cledd");
         Response response = bfhlService.processRequest(request);
         return ResponseEntity.ok(response);
     }
 
-    @GetMapping
+    @GetMapping("/bfhl")
     public ResponseEntity<String> handleGet() {
         return ResponseEntity.ok("OK");
     }

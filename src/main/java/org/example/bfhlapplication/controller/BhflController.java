@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin(origins = "https://bajaj-vercel-1-git-main-krishna-bhawsars-projects.vercel.app")
 public class BhflController {
     @Autowired
     BfhlService bfhlService;

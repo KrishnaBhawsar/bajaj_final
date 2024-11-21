@@ -11,7 +11,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:3000", "bajaj-vercel-1-git-main-krishna-bhawsars-projects.vercel.app")  // Allow React frontend
+                .allowedOrigins("http://localhost:3000", "https://bajaj-vercel-1-git-main-krishna-bhawsars-projects.vercel.app")  // Allow React frontend
                 .allowedMethods("GET", "POST");
     }
 }

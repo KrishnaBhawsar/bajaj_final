@@ -16,8 +16,8 @@ public class BhflController {
 
     @PostMapping
     public ResponseEntity<Response> handlePost(@RequestBody BfhlRequest request) {
-        Response response = bfhlService.processRequest(request);
         System.out.println("cledd");
+        Response response = bfhlService.processRequest(request);
         return ResponseEntity.ok(response);
     }
 
